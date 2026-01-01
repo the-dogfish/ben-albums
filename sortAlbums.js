@@ -325,11 +325,11 @@ function searching(){
     }
   }
 
-
   display(CriteriaData);  /*Display Sorting Data*/
 }
 
 function displayDropdown(){
+
     var SearchString  = $('#search').val().toUpperCase();  /*Uppercase for Case Insentive*/
     var SortBy        = $('#sort').val();
     var dirSort       = $('#order').is(":checked");
@@ -437,7 +437,6 @@ function displayDropdown(){
 }
 
 function display(Data){
-
     var html = '';
   //this part controls the display of albums
   for(var i=0; i<Data.length;i++){
@@ -466,6 +465,7 @@ function display(Data){
     html+='</div>';
   };
   $('#albums').html(html);
+
 
   /*Display some info about what is currently being displayed*/
   var SearchString  = $('#search').val().toUpperCase();  /*Uppercase for Case Insentive*/
@@ -496,6 +496,12 @@ function display(Data){
 
   }
 
+  if (Data.length == 0){
+    $('#albumCount').html('<p>Displaying ' + Data.length + "/" + DataFull.length + ' Albums <\p>');
+
+    $('#stats').html('<p><\p>');
+    return;
+  }
   const mode = Array.from(new Set(allScores)).reduce((prev, curr) => allScores.filter(el => el === curr).length > allScores.filter(el => el === prev).length ? curr : prev);
 
   albumCount +=  (Math.round(totalScore * 100 / Data.length)/100).toString() + "<\p>";
@@ -505,6 +511,10 @@ function display(Data){
   stats += "<p>Highest Score: " + (highestValue).toString() + "<p>";
   stats += "<p>Modal Score: " + (mode).toString() + "<p>";
   stats += "<p>PCC (Year:Score): " + (calculatePCC(Data)).toString() + "<p>";
+
+  if (Data.length == 0){
+    stats = "";
+  }
 
   $('#albumCount').html(albumCount);
 
