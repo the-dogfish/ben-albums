@@ -80,12 +80,16 @@ var albumsById = {
 
 };
 
+/*ADD PRODUCERS, BAND MEMBERS, ETC HERE (if you want them to show up as a search option)*/
+var extraArtists = ["Jack Antonoff", "Max Martin","Mick Jones","Tom Petty"];
+
 var AlbumArray = Object.keys(albumsById).map(function(v) {
   return $.extend({ ID: v }, albumsById[v]);
 });
 
 display(AlbumArray);  /*Display All AlbumArray data */
 
+/*THIS CONTROLS SORTING, I.E. SORT BY YEAR, OR SORT BY ARTIST (alphabetical)*/
 function sorting(EmpData,SearchString='',SortBy='ID',dirSort){
   switch(SortBy){
 
@@ -249,6 +253,8 @@ function sorting(EmpData,SearchString='',SortBy='ID',dirSort){
 
 }
 
+
+/*THIS CONTROLS SEARCHING, AND EXTRA CRITERIA LIKE 'ARTIST -> THE CLASH'*/
 function searching(){
   var SearchString  = $('#search').val().toUpperCase();  /*Uppercase for Case Insentive*/
   var SortBy        = $('#sort').val();
@@ -285,6 +291,58 @@ function searching(){
     }
     else if (onlyShow == "Artist" && SearchData[i].Artist.includes(onlyShowBy)){
         CriteriaData[index2++] = SearchData[i];
+    }
+    else if (onlyShow == "Month"){
+      var yearCorrect = false;
+      if (onlyShowBy.includes("2025") && SearchData[i].Date.split("/")[2].includes("2025")){
+          yearCorrect = true;
+      }
+      else if (onlyShowBy.includes("2026") && SearchData[i].Date.split("/")[2].includes("2026")){
+          yearCorrect = true;
+      }
+
+      var monthCorrect = false;
+
+      if (onlyShowBy.includes("January") && SearchData[i].Date.split("/")[1].includes("01")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("February") && SearchData[i].Date.split("/")[1].includes("02")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("March") && SearchData[i].Date.split("/")[1].includes("03")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("April") && SearchData[i].Date.split("/")[1].includes("04")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("May") && SearchData[i].Date.split("/")[1].includes("05")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("June") && SearchData[i].Date.split("/")[1].includes("06")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("July") && SearchData[i].Date.split("/")[1].includes("07")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("August") && SearchData[i].Date.split("/")[1].includes("08")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("September") && SearchData[i].Date.split("/")[1].includes("09")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("October") && SearchData[i].Date.split("/")[1].includes("10")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("November") && SearchData[i].Date.split("/")[1].includes("11")){
+        monthCorrect = true;
+      }
+      else if (onlyShowBy.includes("December") && SearchData[i].Date.split("/")[1].includes("12")){
+        monthCorrect = true;
+      }
+
+      if (yearCorrect && monthCorrect){
+        CriteriaData[index2++] = SearchData[i];
+      }
     }
     else if (onlyShow == "Decade"){
         var lowerBound = 1950;
@@ -339,6 +397,7 @@ function searching(){
   display(CriteriaData);  /*Display Sorting Data*/
 }
 
+/*THIS CONTROLS CREATING THE DROPDOWN MENUS, such as the list of artists*/
 function displayDropdown(){
 
     var SearchString  = $('#search').val().toUpperCase();  /*Uppercase for Case Insentive*/
@@ -355,6 +414,14 @@ function displayDropdown(){
     const listOfOptions = [];
     var checkShow = true;
 
+    if (onlyShow == "Artist"){
+      for (var i=0; i<extraArtists.length;i++)
+        {
+          listOfOptions.push(extraArtists[i]);
+        }
+    }
+
+
     for (var i=0; i<Data.length;i++){
         
         if (onlyShow == "Recommender"){
@@ -369,10 +436,15 @@ function displayDropdown(){
         }
 
         if (onlyShow == "Artist"){
-            if (!listOfOptions.includes(Data[i].Artist)){
-                var artistName = Data[i].Artist.split("(")[0];
+            if (!listOfOptions.includes($.trim(Data[i].Artist.split("(")[0]))){
+                var artistName = $.trim(Data[i].Artist.split("(")[0]);
                 listOfOptions.push(artistName);
             }
+        }
+
+        if (onlyShow == "Month"){
+            listOfOptions.push.apply(listOfOptions,buildCleverMonths());
+            break;
         }
 
         if (onlyShow == "Decade"){
@@ -414,9 +486,11 @@ function displayDropdown(){
         }
     }
 
-     listOfOptions.sort(function(a,b) {
-        return a.localeCompare(b);  /*Sort By Date*/
+    if (onlyShow != "Month"){
+           listOfOptions.sort(function(a,b) {
+        return a.localeCompare(b);  /*Sort By Alphabetical*/
       });
+    }
 
       listOfOptions.unshift("All");
 
@@ -447,6 +521,7 @@ function displayDropdown(){
     }
 }
 
+/*THIS DISPLAYS THE ALBUMS, AND THE STATS*/
 function display(Data){
     var html = '';
   //this part controls the display of albums
@@ -585,4 +660,110 @@ function changeSortDirection(){
     if (direction_button.innerHTML == "↓"){
         direction_button.innerHTML = "↑";
     }
+}
+
+/*THIS WORKS OUT WHAT MONTHS I HAVE LISTENED TO ALBUMS IN*/
+function buildCleverMonths(){
+  const listOfOptions = [];
+  for(i=2025; i< 2050; i++){
+    for(j=1; j< 13; j++){
+      var month = "";
+      if (j == 1){
+        month = "January";
+      }
+      else if (j == 2){
+        month = "February";
+      }
+      else if (j == 3){
+        month = "March";
+      }
+      else if (j == 4){
+        month = "April";
+      }
+      else if (j == 5){
+        month = "May";
+      }
+      else if (j == 6){
+        month = "June";
+      }
+      else if (j == 7){
+        month = "July";
+      }
+      else if (j == 8){
+        month = "August";
+      }
+      else if (j == 9){
+        month = "September";
+      }
+      else if (j == 10){
+        month = "October";
+      }
+      else if (j == 11){
+        month = "November";
+      }
+      else if (j == 12){
+        month = "December";
+      }
+
+      var bothCorrect = false;
+      for(k=0; k< AlbumArray.length; k++){
+          var yearCorrect = false;
+      if (AlbumArray[k].Date.split("/")[2].includes(i)){
+          yearCorrect = true;
+      }
+
+      var monthCorrect = false;
+
+      if (month.includes("January") && AlbumArray[k].Date.split("/")[1].includes("01")){
+        monthCorrect = true;
+      }
+      else if (month.includes("February") && AlbumArray[k].Date.split("/")[1].includes("02")){
+        monthCorrect = true;
+      }
+      else if (month.includes("March") && AlbumArray[k].Date.split("/")[1].includes("03")){
+        monthCorrect = true;
+      }
+      else if (month.includes("April") && AlbumArray[k].Date.split("/")[1].includes("04")){
+        monthCorrect = true;
+      }
+      else if (month.includes("May") && AlbumArray[k].Date.split("/")[1].includes("05")){
+        monthCorrect = true;
+      }
+      else if (month.includes("June") && AlbumArray[k].Date.split("/")[1].includes("06")){
+        monthCorrect = true;
+      }
+      else if (month.includes("July") && AlbumArray[k].Date.split("/")[1].includes("07")){
+        monthCorrect = true;
+      }
+      else if (month.includes("August") && AlbumArray[k].Date.split("/")[1].includes("08")){
+        monthCorrect = true;
+      }
+      else if (month.includes("September") && AlbumArray[k].Date.split("/")[1].includes("09")){
+        monthCorrect = true;
+      }
+      else if (month.includes("October") && AlbumArray[k].Date.split("/")[1].includes("10")){
+        monthCorrect = true;
+      }
+      else if (month.includes("November") && AlbumArray[k].Date.split("/")[1].includes("11")){
+        monthCorrect = true;
+      }
+      else if (month.includes("December") && AlbumArray[k].Date.split("/")[1].includes("12")){
+        monthCorrect = true;
+      }
+
+      if (yearCorrect && monthCorrect){
+        bothCorrect = true;
+        break;
+      }
+      }
+
+      if (bothCorrect){
+        listOfOptions.push(month + " " + i);
+      }
+  
+    }
+  
+  }
+
+  return listOfOptions;
 }
