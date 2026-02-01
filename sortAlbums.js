@@ -146,14 +146,13 @@ var albumsById = {
 "00140":{"Name": "Nilsson Schmilsson","Artist": "Harry Nilsson","Date": "13/01/2026","Year": "1971","Genres": "Rock, Pop","Score":"7.5","Length": "35","bestSong": "Gotta Get Up","revisited":"N","imageName":"nilsson schmilsson.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Perfectly captures the early morning groggy but happy feeling. I especially love the first track. "},
 "00141":{"Name": "Birth of the Cool","Artist": "Miles Davis","Date": "13/01/2026","Year": "1957","Genres": "Jazz","Score":"6.5","Length": "35","bestSong": "Move","revisited":"N","imageName":"birth of the cool.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Classic fun jazz! It's exciting and bouncy. "},
 "00142":{"Name": "Pet Sounds","Artist": "The Beach Boys","Date": "13/01/2026","Year": "1966","Genres": "Art Rock, Pop","Score":"8.5","Length": "36","bestSong": "Wouldn't It Be Nice","revisited":"N","imageName":"pet sounds.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Fantastic! A joy start to finish. One of my favourite classic pop albums."},
-"00143":{"Name": "Call of the Valley","Artist": "Hariprasad Chaurasia, Brij Bhushan Kabra, and Shivkumar Sharma","Date": "13/01/2026","Year": "1968","Genres": "Hindustani Classical, Indian Classical","Score":"7","Length": "40","bestSong": "...","revisited":"N","imageName":"call of the valley.jpeg","suggester": "1001 Albums You Must Hear Before You Die","country": "India, Asia","description": "Beautiful! The instruments are all doing their own thing, but in a way that lets them all coexist nicely. The flute is especially great."},
+"00143":{"Name": "Call of the Valley","Artist": "Hariprasad Chaurasia,Brij Bhushan Kabra,Shivkumar Sharma","Date": "13/01/2026","Year": "1968","Genres": "Hindustani Classical, Indian Classical","Score":"7","Length": "40","bestSong": "...","revisited":"N","imageName":"call of the valley.jpeg","suggester": "1001 Albums You Must Hear Before You Die","country": "India, Asia","description": "Beautiful! The instruments are all doing their own thing, but in a way that lets them all coexist nicely. The flute is especially great."},
 "00144":{"Name": "Getting Killed","Artist": "Geese","Date": "13/01/2026","Year": "2025","Genres": "Art Rock","Score":"5.5","Length": "46","bestSong": "Taxes","revisited":"N","imageName":"getting killed.jpg","suggester": "Jacob","country": "USA, North America","description": "A messy album, but in a really fun way. I can see why someone might really like this, it just didn't connect with me personally. I'll give it another go someday."},
 "00145":{"Name": "Shalimar","Artist": "Rahul Dev Burman","Date": "13/01/2026","Year": "1978","Genres": "Soundtrack, Bollywood","Score":"7.5","Length": "40","bestSong": "One Two Cha Cha Cha","revisited":"N","imageName":"shalimar.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "India, Asia","description": "I love the variety in this album. It's more accessible than the hindustani albums I've listened to already, due to the Western/Indian blend. I really enjoyed this."},
 "00146":{"Name": "Arrival","Artist": "ABBA","Date": "13/01/2026","Year": "1976","Genres": "Pop, Disco","Score":"7.5","Length": "33","bestSong": "Dancing Queen","revisited":"N","imageName":"arrival.png","suggester": "1001 Albums You Must Hear Before You Die","country": "Sweden, Europe","description": "This is what you want from an ABBA album! Lots of hits, and the other tracks maintain the energy. Great listen!"},
 "00147":{"Name": "Push The Button","Artist": "The Chemical Brothers","Date": "13/01/2026","Year": "2005","Genres": "Electronic, Techno","Score":"6.5","Length": "60","bestSong": "Galvanize","revisited":"N","imageName":"push the button.png","suggester": "","country": "England, Europe","description": "Fun, but never nears the heights of the first track. I'd just listen to 'Galvanize' and move on."},
 "00148":{"Name": "The Miseducation of Lauryn Hill","Artist": "Lauryn Hill","Date": "14/01/2026","Year": "1998","Genres": "R&B, Soul, Hip-Hop","Score":"7.5","Length": "78","bestSong": "Doo Wop (That Thing)","revisited":"N","imageName":"the miseducation of lauryn hill.png","suggester": "Jacob","country": "USA, North America","description": ""},
 "00149":{"Name": "Metallica ","Artist": "Metallica ","Date": "15/01/2026","Year": "1991","Genres": "Heavy Metal","Score":"7","Length": "63","bestSong": "Enter Sandman","revisited":"N","imageName":"metallica.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "I enjoyed it, but I found it to be a surprisingly forgettable album. I'll definitely give it another go."},
-"00150":{"Name": "Euro-Country","Artist": "CMAT","Date": "15/01/2026","Year": "2025","Genres": "Indie, Pop","Score":"8.5","Length": "49","bestSong": "Jamie Oliver Petrol Station","revisited":"N","imageName":"euro-country.jpg","suggester": "Amelie","country": "Ireland, Europe","description": "So many well written songs, all with great hooks. This album is such a good time. "},
 "00150":{"Name": "Euro-Country","Artist": "CMAT","Date": "15/01/2026","Year": "2025","Genres": "Indie, Pop","Score":"8.5","Length": "49","bestSong": "Jamie Oliver Petrol Station","revisited":"N","imageName":"euro-country.jpg","suggester": "Amelie","country": "Ireland, Europe","description": "So many well written songs, all with great hooks. This album is such a good time. "},
 "00151":{"Name": "What's Going On","Artist": "Marvin Gaye","Date": "15/01/2026","Year": "1971","Genres": "R&B, Soul","Score":"8.5","Length": "36","bestSong": "Mercy Mercy Me (The Ecology)","revisited":"N","imageName":"what's going on.jpg","suggester": "Jacob(1001 Albums You Must Hear Before You Die)","country": "USA, North America","description": "The more I listen to it, the more I like it. So smooth."},
 "00152":{"Name": "United","Artist": "Marvin Gaye, Tammi Terrell","Date": "15/01/2026","Year": "1967","Genres": "R&B, Soul","Score":"7.5","Length": "34","bestSong": "Ain't No Mountain High Enough","revisited":"N","imageName":"united.jpg","suggester": "","country": "USA, North America","description": "Sickly sweet in a really nice way. Doesn't at all overstay its welcome."},
@@ -191,20 +190,22 @@ var albumsById = {
 "00184":{"Name": "Fetch The Bolt Cutters","Artist": "Fiona Apple","Date": "23/01/2026","Year": "2020","Genres": "Art Pop, Experimental, Indie","Score":"9","Length": "52","bestSong": "Shameika","revisited":"N","imageName":"fetch the bolt cutters.png","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Chaotic and discordant in a way that still sounds great. I much prefer this to 'Tidal' "},
 "00185":{"Name": "That's Showbiz Baby","Artist": "Jade","Date": "23/01/2026","Year": "2025","Genres": "Pop","Score":"7.5","Length": "46","bestSong": "Midnight Cowboy","revisited":"N","imageName":"that's showbiz baby.png","suggester": "Jacob","country": "England, Europe","description": "Such an exciting album. So much going on - love the Ncuti Gatwa feature."},
 "00186":{"Name": "Misty In Roots Live At The Counter Eurovision","Artist": "Misty In Roots","Date": "23/01/2026","Year": "1978","Genres": "Live, Reggae","Score":"6.5","Length": "38","bestSong": "...","revisited":"N","imageName":"misty live eurovision.jpg","suggester": "Dad","country": "England, Europe, Saint Kitts and Nevis, North America","description": "Fun, but nothing groundbreaking. This being a live album is its biggest asset."},
-"00187":{"Name": "O.G. Original Gangster","Artist": "ICE-T","Date": "24/01/2026","Year": "1991","Genres": "Gangsta Rap","Score":"7","Length": "72","bestSong": "Mind Over Matter","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "LA Home of the Bodybag' yeah we get it. 'First Impression' is good. A lot to like - maybe a tiny bit too long."},
-"00188":{"Name": "Bandwagonesque","Artist": "Teenage Fanclub","Date": "24/01/2026","Year": "1991","Genres": "Rock, Pop","Score":"6","Length": "43","bestSong": "What You Do To Me","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "Scotland, Europe","description": "Nice easy listening but throughly boring. Total background music stuff. Fun album title at least."},
-"00189":{"Name": "Blue Lines","Artist": "Massive Attack","Date": "24/01/2026","Year": "1991","Genres": "Hip Hop, Electronic","Score":"8","Length": "45","bestSong": "Unfinished Sympathy","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "England, Europe","description": "Expertly crafted yet sounds apathetic. The Fiddler on the Roof reference made me laugh. I thoroughly enjoyed it!"},
-"00190":{"Name": "Woodface","Artist": "Crowded House","Date": "24/01/2026","Year": "1991","Genres": "Pop, Rock","Score":"7","Length": "48","bestSong": "Weather With You","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "Australia, New Zealand, Oceania","description": ""},
-"00191":{"Name": "The White Room","Artist": "The KLF","Date": "24/01/2026","Year": "1991","Genres": "Electronic, Pop","Score":"8.5","Length": "44","bestSong": "Justified and Ancient","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "England, Europe","description": "Hard to find the original version of this! "},
-"00192":{"Name": "Heaven or Las Vegas","Artist": "Cocteau Twins","Date": "25/01/2026","Year": "1990","Genres": "Dream Pop","Score":"7","Length": "38","bestSong": "Cherry-Coloured Funk","revisited":"N","imageName":"","suggester": "Callum(1001 Albums You Must Hear Before You Die)","country": "Scotland, Europe","description": ""},
-"00193":{"Name": "Born To Run","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1975","Genres": "Pop, Rock, Folk","Score":"6.5","Length": "39","bestSong": "Born To Run","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Fun, and solid, but nothing spectacular."},
-"00194":{"Name": "Darkness on the Edge of Town","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1978","Genres": "Pop, Rock","Score":"7","Length": "42","bestSong": "Badlands","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "More exciting,and a little bit edgier than 'Born to Run'."},
-"00195":{"Name": "Nebraska","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1982","Genres": "Folk","Score":"6.5","Length": "41","bestSong": "","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "A lot more solemn than 'Born To Run' or even 'Darkness on the Edge of Town'. So much effective storytelling in these songs. Such a fun listen."},
-"00196":{"Name": "Born in the U.S.A.","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1984","Genres": "Rock, Pop","Score":"8.5","Length": "47","bestSong": "Dancing In The Dark","revisited":"Y","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "The definitive Bruce Springsteen sound."},
-"00197":{"Name": "The Rising","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "2002","Genres": "Pop, Rock","Score":"6.5","Length": "73","bestSong": "Into the Fire","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Bruce Springsteen's reflections on 9/11 - the most emotional of his albums that I've listened to. Comes together perfectly, but lacks a standout song to reach the heights of 'Born in the U.S.A'."},
-"00198":{"Name": "In The Court of The Crimson King","Artist": "King Crimson","Date": "26/01/2026","Year": "1999","Genres": "Art Rock, Prog Rock","Score":"8.5","Length": "45","bestSong": "21st Century Schizoid Man","revisited":"N","imageName":"","suggester": "Jacob(1001 Albums You Must Hear Before You Die)","country": "England, Europe","description": "This album takes you on a journey! Every song sounds great, especially the first three. Love it!"},
-"00199":{"Name": "69 Love Songs","Artist": "The Magnetic Fields","Date": "27/01/2026","Year": "1999","Genres": "Indie, Pop","Score":"4","Length": "165","bestSong": "Busby Berkley Dreams","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "After a while I did settle into it and start to enjoy bits - but for the most part this album is boring. Boring for 40 minutes isn't terrible, but boring for close to 3 hours is a slog."},
-"00200":{"Name": "John Prine","Artist": "John Prine","Date": "27/01/2026","Year": "1971","Genres": "Folk, Country","Score":"5.5","Length": "45","bestSong": "Paradise","revisited":"N","imageName":"","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Pleasant but nothing spectacular. Easy listening country that doesn't push any boundaries."},
+"00187":{"Name": "O.G. Original Gangster","Artist": "ICE-T","Date": "24/01/2026","Year": "1991","Genres": "Gangsta Rap","Score":"7","Length": "72","bestSong": "Mind Over Matter","revisited":"N","imageName":"o.g. original gangster.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "LA Home of the Bodybag' yeah we get it. 'First Impression' is good. A lot to like - maybe a tiny bit too long."},
+"00188":{"Name": "Bandwagonesque","Artist": "Teenage Fanclub","Date": "24/01/2026","Year": "1991","Genres": "Rock, Pop","Score":"6","Length": "43","bestSong": "What You Do To Me","revisited":"N","imageName":"bandwagonesque.png","suggester": "1001 Albums You Must Hear Before You Die","country": "Scotland, Europe","description": "Nice easy listening but throughly boring. Total background music stuff. Fun album title at least."},
+"00189":{"Name": "Blue Lines","Artist": "Massive Attack","Date": "24/01/2026","Year": "1991","Genres": "Hip Hop, Electronic","Score":"8","Length": "45","bestSong": "Unfinished Sympathy","revisited":"N","imageName":"blue lines.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "England, Europe","description": "Expertly crafted yet sounds apathetic. The Fiddler on the Roof reference made me laugh. I thoroughly enjoyed it!"},
+"00190":{"Name": "Woodface","Artist": "Crowded House","Date": "24/01/2026","Year": "1991","Genres": "Pop, Rock","Score":"7","Length": "48","bestSong": "Weather With You","revisited":"N","imageName":"woodface.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "Australia, New Zealand, Oceania","description": ""},
+"00191":{"Name": "The White Room","Artist": "The KLF","Date": "24/01/2026","Year": "1991","Genres": "Electronic, Pop","Score":"8.5","Length": "44","bestSong": "Justified and Ancient","revisited":"N","imageName":"the white room.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "England, Europe","description": "Hard to find the original version of this! "},
+"00192":{"Name": "Heaven or Las Vegas","Artist": "Cocteau Twins","Date": "25/01/2026","Year": "1990","Genres": "Dream Pop","Score":"7","Length": "38","bestSong": "Cherry-Coloured Funk","revisited":"N","imageName":"heaven or las vegas.jpg","suggester": "Callum(1001 Albums You Must Hear Before You Die)","country": "Scotland, Europe","description": ""},
+"00193":{"Name": "Born To Run","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1975","Genres": "Pop, Rock, Folk","Score":"6.5","Length": "39","bestSong": "Born To Run","revisited":"N","imageName":"born to run.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Fun, and solid, but nothing spectacular."},
+"00194":{"Name": "Darkness on the Edge of Town","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1978","Genres": "Pop, Rock","Score":"7","Length": "42","bestSong": "Badlands","revisited":"N","imageName":"darkness on the edge of town.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "More exciting,and a little bit edgier than 'Born to Run'."},
+"00195":{"Name": "Nebraska","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1982","Genres": "Folk","Score":"6.5","Length": "41","bestSong": "","revisited":"N","imageName":"nebraska.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "A lot more solemn than 'Born To Run' or even 'Darkness on the Edge of Town'. So much effective storytelling in these songs. Such a fun listen."},
+"00196":{"Name": "Born in the U.S.A.","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "1984","Genres": "Rock, Pop","Score":"8.5","Length": "47","bestSong": "Dancing In The Dark","revisited":"Y","imageName":"born in the usa.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "The definitive Bruce Springsteen sound."},
+"00197":{"Name": "The Rising","Artist": "Bruce Springsteen","Date": "25/01/2026","Year": "2002","Genres": "Pop, Rock","Score":"6.5","Length": "73","bestSong": "Into the Fire","revisited":"N","imageName":"the rising.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Bruce Springsteen's reflections on 9/11 - the most emotional of his albums that I've listened to. Comes together perfectly, but lacks a standout song to reach the heights of 'Born in the U.S.A'."},
+"00198":{"Name": "In The Court of The Crimson King","Artist": "King Crimson","Date": "26/01/2026","Year": "1999","Genres": "Art Rock, Prog Rock","Score":"8.5","Length": "45","bestSong": "21st Century Schizoid Man","revisited":"N","imageName":"in the court of the crimson king.jpeg","suggester": "Jacob(1001 Albums You Must Hear Before You Die)","country": "England, Europe","description": "This album takes you on a journey! Every song sounds great, especially the first three. Love it!"},
+"00199":{"Name": "69 Love Songs","Artist": "The Magnetic Fields","Date": "27/01/2026","Year": "1999","Genres": "Indie, Pop","Score":"3.5","Length": "165","bestSong": "Busby Berkley Dreams","revisited":"N","imageName":"69 love songs.jpg","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "After a while I did settle into it and start to enjoy bits - but for the most part this album is boring. Boring for 40 minutes isn't terrible, but boring for close to 3 hours is a slog."},
+"00200":{"Name": "John Prine","Artist": "John Prine","Date": "27/01/2026","Year": "1971","Genres": "Folk, Country","Score":"5.5","Length": "45","bestSong": "Paradise","revisited":"N","imageName":"john prine.png","suggester": "1001 Albums You Must Hear Before You Die","country": "USA, North America","description": "Pleasant but nothing spectacular. Easy listening country that doesn't push any boundaries."},
+
+
 
 
 
@@ -584,7 +585,17 @@ function displayDropdown(){
         if (onlyShow == "Artist"){
             if (!listOfOptions.includes($.trim(Data[i].Artist.split("(")[0]))){
                 var artistName = $.trim(Data[i].Artist.split("(")[0]);
-                listOfOptions.push(artistName);
+
+                if (artistName.includes(",")){
+                  for (var j=0; j < artistName.split(",").length; j++){
+                    if(!listOfOptions.includes($.trim(artistName.split(",")[j]))){
+                      listOfOptions.push($.trim(artistName.split(",")[j]));
+                    }
+                  }
+                }
+                else{
+                      listOfOptions.push(artistName);
+                }
             }
         }
 
@@ -643,16 +654,192 @@ function displayDropdown(){
 
     if (onlyShow != "Month"){
            listOfOptions.sort(function(a,b) {
-        return a.localeCompare(b);  /*Sort By Alphabetical*/
+
+          var c = a;
+          var d = b;
+
+        if (a.length > 4){
+            if (a[0].toUpperCase() == "T" && a[1].toUpperCase() == "H" && a[2].toUpperCase() == "E" && a[3] == " "){
+                c = "";
+
+                for(i = 4; i < a.length;i++){
+                    c+= a[i];
+                }
+            }
+        }
+        if (b.length > 4){
+            if (b[0].toUpperCase() == "T" && b[1].toUpperCase() == "H" && b[2].toUpperCase() == "E" && b[3] == " "){
+                d = "";
+
+                for(i = 4; i < b.length;i++){
+                    d+= b[i];
+                }
+            }
+        }
+
+        if (a.length > 3){
+            if (a[0].toUpperCase() == "A" && a[1] == " "){
+                c = "";
+
+                for(i = 2; i < a.length;i++){
+                    c+= a[i];
+                }
+            }
+        }
+        if (b.length > 3){
+            if (b[0].toUpperCase() == "T" && b[1] == " "){
+                d = "";
+
+                for(i = 2; i < b.length;i++){
+                    d+= b[i];
+                }
+            }
+        }
+
+
+        return c.localeCompare(d);/*Sort By Alphabetical*/
       });
     }
 
+      const listOfOptionsNums = [];
+
+      for (var i=0; i<listOfOptions.length;i++){
+
+          var counter = 0;
+
+          for (var j=0; j<Data.length;j++){
+            if (onlyShow == "Recommender"){
+              if (Data[j].suggester.includes(listOfOptions[i])){
+                counter++;
+              }
+            }
+            else if (onlyShow == "Artist"){
+              if (Data[j].Artist.includes(listOfOptions[i])){
+                counter++;
+              }
+            }
+            else if (onlyShow == "Genre"){
+              if (Data[j].Genres.includes(listOfOptions[i])){
+                counter++;
+              }
+            }
+            else if (onlyShow == "Country"){
+              if (Data[j].country.includes(listOfOptions[i])){
+                counter++;
+              }
+            }
+            else if (onlyShow == "Month"){
+              var yearCorrect = false;
+              if (listOfOptions[i].includes("2025") && Data[j].Date.split("/")[2].includes("2025")){
+                yearCorrect = true;
+              }
+              else if (listOfOptions[i].includes("2026") && Data[j].Date.split("/")[2].includes("2026")){
+              yearCorrect = true;
+              }
+
+              var monthCorrect = false;
+
+      if (listOfOptions[i].includes("January") && Data[j].Date.split("/")[1].includes("01")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("February") && Data[j].Date.split("/")[1].includes("02")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("March") && Data[j].Date.split("/")[1].includes("03")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("April") && Data[j].Date.split("/")[1].includes("04")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("May") && Data[j].Date.split("/")[1].includes("05")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("June") && Data[j].Date.split("/")[1].includes("06")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("July") && Data[j].Date.split("/")[1].includes("07")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("August") && Data[j].Date.split("/")[1].includes("08")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("September") && Data[j].Date.split("/")[1].includes("09")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("October") && Data[j].Date.split("/")[1].includes("10")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("November") && Data[j].Date.split("/")[1].includes("11")){
+        monthCorrect = true;
+      }
+      else if (listOfOptions[i].includes("December") && Data[j].Date.split("/")[1].includes("12")){
+        monthCorrect = true;
+      }
+
+      if (yearCorrect && monthCorrect){
+        counter++;
+      }
+            }
+            else if (onlyShow == "Decade"){
+        var lowerBound = 1950;
+        var upperBound = 2025;
+        if (listOfOptions[i].includes("1950")){
+            lowerBound = 1950;
+            upperBound = 1960;
+        }
+        else if (listOfOptions[i].includes("1960")){
+            lowerBound = 1960;
+            upperBound = 1970;
+        }
+        else if (listOfOptions[i].includes("1970")){
+            lowerBound = 1970;
+            upperBound = 1980;
+        }
+        else if (listOfOptions[i].includes("1980")){
+            lowerBound = 1980;
+            upperBound = 1990;
+        }
+        else if (listOfOptions[i].includes("1990")){
+            lowerBound = 1990;
+            upperBound = 2000;
+        }   
+        else if (listOfOptions[i].includes("2000")){
+            lowerBound = 2000;
+            upperBound = 2010;
+        }       
+        else if (listOfOptions[i].includes("2010")){
+            lowerBound = 2010;
+            upperBound = 2020;
+        }
+        else if (listOfOptions[i].includes("2020")){
+            lowerBound = 2020;
+            upperBound = 2030;
+        }
+
+        if (Number(Data[j].Year) < upperBound && lowerBound <= Number(Data[j].Year)){
+            counter++;
+        }
+            }
+
+
+          }
+          listOfOptionsNums.push(counter);
+      }
+
+
       listOfOptions.unshift("All");
+      listOfOptionsNums.unshift(0);
 
         for(var i=0; i<listOfOptions.length;i++){
         if (listOfOptions[i].length > 0)
         {
-          html2 += '<option value="' + listOfOptions[i] + '" class="standardText">' + listOfOptions[i] + '</option>';
+          if (i != 0){
+            html2 += '<option value="' + listOfOptions[i] + '" class="standardText">' + listOfOptions[i] + ' (' + listOfOptionsNums[i] + ') </option>';
+          }
+          else{
+            html2 += '<option value="' + listOfOptions[i] + '" class="standardText">' + listOfOptions[i] + '</option>';
+          }
+          
         }
         }
 
