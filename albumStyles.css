@@ -150,6 +150,19 @@ select>option {
   height: 34px;
 }
 
+.switchTwo {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switchTwo input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 .switch input { 
   opacity: 0;
   width: 0;
@@ -220,6 +233,22 @@ body {
     row-gap :0px;
     column-gap: 40px;
     background-color: #FFF0DD;
+}
+
+.extraHolder{
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap :0px;
+    column-gap: 40px;
+    background-color: #FFF0DD;
+
+        padding-bottom: 4px;
+    font-family: mainFont;
+    font-size: 27px;
 }
 
 .album{

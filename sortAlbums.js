@@ -2,6 +2,14 @@
 // Posted by Sumon Sarker
 // Retrieved 2025-12-26, License - CC BY-SA 3.0
 
+var albumCollections = {
+  
+"00001":{"CollectionName": "Fruits and Veggies","AlbumNumbers": "289"},
+"00002":{"CollectionName": "Take That & Co.","AlbumNumbers": "208,292,157"},
+"00003":{"CollectionName": "The Beatles & Co.","AlbumNumbers": "293,294,295,296,297,298,299,300,301"},
+"00004":{"CollectionName": "Lesser Known Recommendations","AlbumNumbers": "58,191,314,322,334,335"},
+}
+
 var albumsById = {
 "00001":{"Name": "Eddie, Old Bob, Dick and Gary","Artist": "Tenpole Tudor","Date": "11/12/2025","Year": "1981","Genres": "Punk, New Wave","Score":"5.5","Stone":"0","Length": "35","bestSong": "Swords Of A Thousand Men","revisited":"N","imageName":"eddie, old bob, dick and gary.jpg","suggester": "","country": "England, Europe","description": "Swords of A Thousand Men' demonstrates that Tenpole Tudor can produce a great song, but the album doesn't have anything else close to that standard. The other singles just don't do it for me."},
 "00002":{"Name": "Unreal Unearth: Unaired","Artist": "Hozier","Date": "11/12/2025","Year": "2023","Genres": "Indie, Folk, Soul, Rock","Score":"8.5","Stone":"0","Length": "88","bestSong": "Eat Your Young","revisited":"N","imageName":"unreal unearth.jpg","suggester": "Lucinda","country": "Ireland, Europe","description": "I like this a lot. Feel like I'd like it a bit more, though, if I were a lesbian. "},
@@ -380,6 +388,8 @@ var albumsById = {
 
 };
 
+
+
 /*ADD PRODUCERS, BAND MEMBERS, ETC HERE (if you want them to show up as a search option)*/
 var extraArtists = ["Jack Antonoff", "Max Martin","Mick Jones","Tom Petty","Ian McDonald"];
 
@@ -569,6 +579,7 @@ function searching(){
   var SearchString  = $('#search').val().toUpperCase();  /*Uppercase for Case Insentive*/
   var SortBy        = $('#sort').val();
   var dirSort       = $('#order').is(":checked");
+  var devMode       = $('#order').is(":checked");
   var onlyShow      = $('#displayType').val();
   var Data          = sorting(AlbumArray,SearchString,SortBy,dirSort);
   var SearchData    = [];
@@ -608,6 +619,32 @@ function searching(){
     }
     else if (onlyShow == "Artist" && SearchData[i].Artist.includes(onlyShowBy)){
         CriteriaData[index2++] = SearchData[i];
+    }
+    else if (onlyShow == "Collections"){
+
+      //we run through all the collections
+      for (var j=1; j< 1000;j++){
+        var numberString = "0".repeat((5-j.toString().length)).toString() + j.toString();
+
+        if (albumCollections[numberString] != null){
+
+            //if the collection is real and valid, then we check if this collection holds the correct name
+            if (albumCollections[numberString].CollectionName == onlyShowBy){
+              
+              //now we run through that collections album numbers
+              for (var k=0; k< albumCollections[numberString].AlbumNumbers.split(",").length;k++){
+
+                //if the album number matches the album ID then we're good
+
+                  if (parseInt(albumCollections[numberString].AlbumNumbers.split(",")[k]) == parseInt(SearchData[i].ID)){
+                    CriteriaData[index2++] = SearchData[i];
+                  }
+              }
+
+
+            }
+        }
+      }
     }
     else if (onlyShow == "Month"){
       var yearCorrect = false;
@@ -732,6 +769,7 @@ function displayDropdown(){
 
     //we want to create a list of all artists, or people, or decades, or whatever and create a list of all unique ones
     const listOfOptions = [];
+    const listOfOptionsNums = [];
     var checkShow = true;
 
     if (onlyShow == "Artist"){
@@ -743,6 +781,19 @@ function displayDropdown(){
 
     if (onlyShow == "Recommender"){
             listOfOptions.push("Rolling Stone Top 500");
+    }
+
+    if (onlyShow == "Collections"){
+      for (var i=1; i< 1000;i++){
+        var numberString = "0".repeat((5-i.toString().length)).toString() + i.toString();
+
+        if (albumCollections[numberString] != null){
+                  listOfOptions.push(albumCollections[numberString].CollectionName);
+                }   
+        else{
+          break;
+        }
+      }
     }
 
 
@@ -880,11 +931,25 @@ function displayDropdown(){
       });
     }
 
-      const listOfOptionsNums = [];
-
-      for (var i=0; i<listOfOptions.length;i++){
+    for (var i=0; i<listOfOptions.length;i++){
 
           var counter = 0;
+
+          if (onlyShow == "Collections"){
+                  for (var k=1; k< 1000;k++){
+                  var numberString = "0".repeat((5-k.toString().length)).toString() + k.toString();
+
+                  if (albumCollections[numberString] != null){
+                    if (albumCollections[numberString].CollectionName == listOfOptions[i]){
+                        counter = albumCollections[numberString].AlbumNumbers.split(",").length;
+                    }
+                    
+                    
+                  }
+            }
+            listOfOptionsNums.push(counter);
+            continue;
+          }
 
           for (var j=0; j<Data.length;j++){
             if (onlyShow == "Recommender"){
@@ -1003,7 +1068,7 @@ function displayDropdown(){
 
           }
           listOfOptionsNums.push(counter);
-      }
+    }
 
 
       listOfOptions.unshift("All");
@@ -1037,11 +1102,20 @@ function displayDropdown(){
 /*THIS DISPLAYS THE ALBUMS, AND THE STATS*/
 function display(Data){
     var html = '';
+     var devMode = $('#devm').is(":checked");
   //this part controls the display of albums
   for(var i=0; i<Data.length;i++){
     html+='<div class="album album_' + (i % 7).toString() + '">';
-    html += '<img class="albumCover" src="./images/albums/' + Data[i].imageName + '" alt="' + Data[i].Name + ' Album Cover"></img>'
+    html += '<img class="albumCover" src="./images/albums/' + Data[i].imageName + '" alt="' + Data[i].Name + ' Album Cover"></img>';
+
+    if (devMode){
+      html+='<p class="name">'+Data[i].Name+ ' (' + Data[i].Year + ') - ID: ' + Data[i].ID + '</p>';
+    }
+    else{
       html+='<p class="name">'+Data[i].Name+ ' (' + Data[i].Year + ')</p>';
+    }
+
+      
 
       var artistName = Data[i].Artist.split("(")[0];
 
@@ -1181,6 +1255,10 @@ $('#sort').change(function(){  /*Live Search, When Sort by*/
 });
 
 $('#order').change(function(){  /*Live Search, When Toggle Button*/
+  searching();
+});
+
+$('#devm').change(function(){  /*Live Search, When Toggle Button*/
   searching();
 });
 
