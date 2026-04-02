@@ -91,6 +91,18 @@ select>option {
     white-space:pre;
 }
 
+.topstats{
+    font-weight: bold;
+    font-family: mainFont;
+    background-color: #FFF0DD;
+    display : flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    white-space:pre;
+}
+
 .colourYellow{
     font-size: 40pt;
     font-weight: bold;
